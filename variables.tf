@@ -123,11 +123,11 @@ variable "system_ip_address" {
 }
 
 variable "interface_count" {
-  description = "Device license throughput"
+  description = "Number of network interfaces on a device"
   type        = number
   default     = 0
   validation {
-    condition     = var.interface_count == 10 || var.interface_count == 24
+    condition     = var.interface_count == 0 || var.interface_count == 10 || var.interface_count == 24
     error_message = "Device interface count has to be either 10 or 24."
   }
 }
