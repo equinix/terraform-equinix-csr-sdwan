@@ -77,7 +77,7 @@ module "csr-sdwan" {
 |account_number|Billing account number for a device. If not provided, active account for a device metro code will be used|`string`|`0`|no|
 |platform|Device hardware platform flavor: `small`, `medium`, `large`|`string`|`""`|yes|
 |software_package|Device software package: `ADVANTAGE`, `ESSENTIALS`, `PREMIER`|`string`|`""`|yes|
-|license_file|Path to the device license configuration fil|`string`|`""`|yes|
+|license_file|Path to the device license configuration file|`string`|`""`|yes|
 |throughput|Device license throughput|`number`|`0`|yes|
 |throughput_unit|License throughput unit (`Mbps` or `Gbps`)|`string`|`""`|yes|
 |name|Device name|`string`|`""`|yes|
@@ -97,7 +97,7 @@ Secondary device map attributes:
 |enabled|Value that determines if secondary device shall be created|`bool`|`false`|no|
 |metro_code|Two-letter secondary device location's metro code|`string`|`""`|yes|
 |account_number|Billing account number for a device. If not provided, active account for a device metro code will be used|`string`|`0`|no|
-|license_file|Path to the device license configuration fil|`string`|`""`|yes|
+|license_file|Path to the device license configuration file|`string`|`""`|yes|
 |site_id|Site identifier|`string`|`""`|yes|
 |system_ip_address|System IP address|`string`|`""`|yes|
 |acl_template_id|Identifier of a network ACL template that will be applied on a secondary device|`string`|`""`|yes|
