@@ -5,7 +5,7 @@ provider "equinix" {
 
 module "csr-sdwan" {
   source               = "equinix/csr-sdwan/equinix"
-  version              = "1.0.0-beta"
+  version              = "1.0.0"
   name                 = "tf-csr-sdwan"
   metro_code           = var.metro_code_primary
   platform             = "large"
